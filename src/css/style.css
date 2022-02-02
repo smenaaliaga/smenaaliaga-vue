@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-@font-face {
-    font-family: CircularStd;
-    src: url(assets/fonts/CircularStd-Bold.eot);
-    src: url("assets/fonts/CircularStd-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/CircularStd-Bold.woff") format("woff"), url("assets/fonts/CircularStd-Bold.ttf") format("truetype"), url("assets/fonts/CircularStd-Bold.svg#bcc26993292869431e54c666aafa8fcd") format("svg");
-}
 
 .header {
-    background: url('../assets/img/header.png');
+    background: url('../assets/header.png');
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: relative;
@@ -630,6 +625,7 @@ label {
     margin-top: 30px;
     margin-left: 30px;
     width: 70%;
+    pointer-events: none;
 }
 
 #left-hero {
@@ -868,10 +864,6 @@ li span:hover:after {
     .hero-tag {
         margin-top: 10vh;
         font-size: 2.3em;
-    }
-
-    #hero-right {
-        display: none;
     }
 
     .hero-des {
