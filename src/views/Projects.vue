@@ -1,13 +1,22 @@
 <template>
 <header class="header">
 
-  <Navegador />
+    <Navegador />
 
     <div class="animated fadeIn row" style="width:100vw;animation-duration: 1.5s;">
         <div class="col-md-6" id="left-hero">
-            <h1 class="hero-tag"><span class="typer" id="main" data-words="My projects" data-delay="100"
-                    data-deleteDelay="1200" data-loop="1" style="color:blue!important;"></span>
-                &nbsp;</h1>
+
+            <h1 class="hero-tag">
+                <span class="typer" id="main" 
+                    data-words="My Projects" 
+                    data-delay="100"
+                    data-deleteDelay="1200" 
+                    data-loop="1" 
+                    style="color:blue!important;">
+                    </span>
+                    &nbsp;
+            </h1>
+
             <p class="hero-des">
                 I'm Sebastián Mena Aliaga and I'm Industrial Engineer and master's 
                 student in Statistics at Universidad Católica de Valparaíso, Chile.
@@ -20,11 +29,8 @@
                 </a>
             </button>
         </div>
-
-        <div class="col-md-6" id="hero-right">
-            <!-- <img id="hero-img" src="assets/img/undraw_code_review_l1q9.svg"> -->
-            <img id="hero-img" src="assets/gif/3dplot2.gif"/>
-
+        <div class="col-md-6" id="hero-right" style="margin: auto;">
+            <img id="hero-img" src="../assets/3dplot2.gif"/>
         </div>
 
     </div>
@@ -174,8 +180,11 @@
 </template>
 
 <script>
+import Navegador from '../components/Navegador'
+
 export default {
-
-}
+  components: {
+    Navegador
+  }
+};
 </script>
-

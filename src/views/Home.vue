@@ -15,8 +15,9 @@
                   data-delay="100"
                   data-deleteDelay="1200" 
                   data-loop="1" 
-                  style="color:blue!important;"></span>
-                    &nbsp;
+                  style="color:blue!important;">
+            </span>
+              &nbsp;
           </h1>
 
           <p class="hero-des">

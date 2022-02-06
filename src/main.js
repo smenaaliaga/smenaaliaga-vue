@@ -1,24 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
-import VueRouter from 'vue-router'
+import router from "./router/router";
 import './index.css'
 
 Vue.config.productionTip = false
 
-Vue.use(VueRouter)
-
-const Projects = { template: '<div>Projects</div>' }
-
-const routes = [
-  { path: '/Projects', component: Projects },
-]
-
-const router = new VueRouter({
-  routes // short for `routes: routes`
-})
-
 new Vue({
-  router,
+  router, 
   render: h => h(App),
 }).$mount('#app')
 
