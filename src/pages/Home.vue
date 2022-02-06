@@ -10,20 +10,14 @@
         <div class="col-md-6" id="left-hero">
 
           <h1 class="hero-tag">
-            <vue-typer :text='arr'
-            :repeat='0'
-            :shuffle='false'
-            initial-action='typing'
-            :pre-type-delay='70'
-            :type-delay='70'
-            :pre-erase-delay='2000'
-            :erase-delay='250'
-            erase-style='select-all'
-            :erase-on-complete='false'
-            caret-animation='blink' 
-            ></vue-typer>
+            <span class="typer" id="main" 
+                  data-words="Hi, I'm Sebastián Mena Aliaga" 
+                  data-delay="100"
+                  data-deleteDelay="1200" 
+                  data-loop="1" 
+                  style="color:blue!important;"></span>
+                    &nbsp;
           </h1>
-            
 
           <p class="hero-des">
               I'm an Industrial Engineer and master's student in Statistics at 
@@ -59,7 +53,7 @@
             <a target="_blank" href="https://www.linkedin.com/in/sebastián-mena-aliaga-93a81567/"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
-        <div class="col-md-6" id="right-hero">
+        <div class="col-md-6" id="hero-right" style="margin: auto;">
           <img id="hero-img" src="../assets/3dplot2.gif"/>
         </div>
       </div>
@@ -70,17 +64,14 @@
 </template>
 
 <script>
-import { VueTyper } from 'vue-typer'
-import Navegador from './Navegador'
+import Navegador from '../components/Navegador'
 
-  export default {
-    data() {
-      return { arr: ["Hi,", "I'm Sebastián Mena Aliaga"] };
-    },
-    components: {
-      VueTyper,
-      Navegador
-    }
-  };
-
+export default {
+  data() {
+    return { arr: ["Hi,", "I'm Sebastián Mena Aliaga"] };
+  },
+  components: {
+    Navegador
+  }
+};
 </script>

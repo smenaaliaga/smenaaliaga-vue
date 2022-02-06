@@ -38,6 +38,12 @@ a:hover {
     user-select: none;
 }
 
+.vue-typer {
+    font-family: monospace;
+    hyphens: auto;
+  }
+  
+
 :root {
     --primary-color: none;
     --overlay-color: rgba(255, 255, 255, 0.9);
@@ -853,6 +859,10 @@ li span:hover:after {
 
     .work-read {
         float: none;
+    }
+
+    #hero-right {
+        display: none;
     }
 
     #logo {
